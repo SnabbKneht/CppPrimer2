@@ -68,4 +68,6 @@ int main()
     cout << "Number of words: " << words.size() << '\n';
 
     in.close();
+
+    return 0;
 }
