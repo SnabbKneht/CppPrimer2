@@ -1,0 +1,3 @@
+The quick brown fox jumps over the lazy dog.
+C++ programming is both challenging and rewarding.
+File handling in C++ can be tricky at first.

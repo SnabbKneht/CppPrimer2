@@ -14,7 +14,7 @@ int main()
     // Exercise 8.4
     cout << "\nExercise 8.4\n\n";
 
-    ifstream in("data.txt");
+    ifstream in("text.txt");
 
     if(!in)
     {
@@ -43,7 +43,7 @@ int main()
     //Exercise 8.5
     cout << "\nExercise 8.5\n\n";
 
-    in.open("data.txt");
+    in.open("text.txt");
 
     if(!in)
     {

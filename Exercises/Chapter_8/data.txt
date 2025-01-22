@@ -1,3 +1,4 @@
-The quick brown fox jumps over the lazy dog.
-C++ programming is both challenging and rewarding.
-File handling in C++ can be tricky at first.
+ABC-123 3 60.0
+ABC-123 1 25.0
+DEF-456 10 100.0
+DEF-456 1 10.0
