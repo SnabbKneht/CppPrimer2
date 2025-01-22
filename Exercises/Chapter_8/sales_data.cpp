@@ -16,7 +16,7 @@ sales_data::sales_data(std::istream &is)
     double revenue = 0.0;
 
     is >> book_no >> units_sold >> revenue;
-    if(!is) throw std::runtime_error("Error: Could not parse input to Sales_data.");
+    if(!is) throw std::runtime_error("Error: Could not parse input to sales_data.");
 
     this->book_no = book_no;
     this->units_sold = units_sold;
