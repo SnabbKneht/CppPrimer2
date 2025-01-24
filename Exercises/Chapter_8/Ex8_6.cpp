@@ -8,19 +8,33 @@ using std::cout;
 using std::cerr;
 using std::string;
 using std::ifstream;
+using std::ofstream;
 
-int main(int argc, char *argv[])
+bool are_args_provided(int argc)
 {
     if(argc < 2)
     {
-        cerr << "Error: No file argument provided.\n";
-        return -1;
+        cerr << "Error: No input and output file provided.\n";
+        return false;
     }
+    if(argc < 3)
+    {
+        cerr << "Error: No output file provided.\n";
+        return false;
+    }
+    return true;
+}
 
-    string file_path = argv[1];
+int main(int argc, char *argv[])
+{
+    if(!are_args_provided(argc)) return -1;
 
-    ifstream in(file_path);
-    if(!in)
+    const string input_file_path = argv[1];
+    const string output_file_path = argv[2];
+
+    ifstream in(input_file_path);
+    ofstream out(output_file_path, std::ios_base::app);
+    if(!in || !out)
     {
         cerr << "Error: Cannot open the file.\n";
         return -1;
@@ -46,7 +60,7 @@ int main(int argc, char *argv[])
         }
         else
         {
-            cout << total.to_string() << '\n';
+            out << total.to_string() << '\n';
             total = trans;
         }
         try
@@ -58,7 +72,7 @@ int main(int argc, char *argv[])
             break;
         }
     }
-    cout << total.to_string() << '\n';
+    out << total.to_string() << '\n';
 
     return 0;
 }
