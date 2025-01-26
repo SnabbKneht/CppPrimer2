@@ -7,3 +7,4 @@ add_executable(Ex8_1 Exercises/Chapter_8/Ex8_1.cpp)
 add_executable(Ex8_4 Exercises/Chapter_8/Ex8_4.cpp)
 add_executable(Ex8_6 Exercises/Chapter_8/sales_data.cpp Exercises/Chapter_8/sales_data.h
         Exercises/Chapter_8/Ex8_6.cpp)
+add_executable(Ex8_10 Exercises/Chapter_8/Ex8_10.cpp)
