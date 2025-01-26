@@ -1,3 +1,4 @@
+#include <iostream>
 #include <string>
 #include <vector>
 #include <fstream>
@@ -8,6 +9,7 @@ using std::vector;
 using std::getline;
 using std::ifstream;
 using std::istringstream;
+using std::cout;
 
 struct person_info
 {
@@ -29,5 +31,14 @@ int main()
         while(record >> word)
             info.phones.push_back(word);
         people.push_back(info);
+    }
+
+    for(const auto &entry : people)
+    {
+        cout << entry.name << '\n';
+        for(const auto &number : entry.phones)
+        {
+            cout << '\t' << number << '\n';
+        }
     }
 }
