@@ -1,4 +1,5 @@
 #include <iostream>
+#include <sstream>
 #include <thread>
 
 using std::istream;
@@ -19,7 +20,6 @@ istream &read_stream(istream &is)
 
 int main()
 {
-    read_stream(cin);
-    cout << "Press enter to exit.\n";
-    cin.get();
+    std::istringstream iss("Hello\nWorld\n123\n456\n");
+    read_stream(iss);
 }
