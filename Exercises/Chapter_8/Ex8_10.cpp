@@ -28,14 +28,16 @@ void print_lines(const vector<string> &lines)
 
 void print_words(const vector<string> &lines)
 {
+    std::istringstream iss;
     for(auto &line : lines)
     {
-        std::istringstream iss(line);
+        iss.str(line);
         string word;
         while(iss >> word)
         {
             cout << word << '\n';
         }
+        iss.clear();
     }
 }
 
