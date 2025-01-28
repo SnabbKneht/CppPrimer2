@@ -76,4 +76,17 @@ int main()
     for(auto elem : vec5) cout << elem << ' ';
     cout << "\n\nvec6:\n";
     for(auto elem : vec6) cout << elem << ' ';
+
+    // Exercise 9.13
+
+    cout << "\n\nExercise 9.13\n";
+    list<int> l1 = {1, 2, 3, 4, 5};
+    vector<int> vec7 = {1, 2, 3, 4, 5};
+    vector<double> vec8(l1.begin(), l1.end());
+    vector<double> vec9(vec7.begin(), vec7.end());
+
+    cout << "\n\nvec8:\n";
+    for(auto elem : vec8) cout << elem << ' ';
+    cout << "\n\nvec9:\n";
+    for(auto elem : vec9) cout << elem << ' ';
 }
