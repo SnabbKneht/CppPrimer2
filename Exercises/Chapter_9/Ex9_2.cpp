@@ -54,4 +54,26 @@ int main()
     auto it2 = v2.begin();
     auto it3 = v1.cbegin();
     auto it4 = v2.cbegin();
+
+    // Exercise 9.11
+
+    vector<int> vec1; // initialized as empty
+    vector<int> vec2(10); // 10 default-initialized elements (undefined)
+    vector<int> vec3(10, 0); // 10 elements initialized to value 0
+    vector<int> vec4 = {1, 2, 3, 4, 5}; // list initialization
+    vector<int> vec5 = vec4; // copy
+    vector<int> vec6(vec5.begin(), vec5.end()); // iterator range
+
+    cout << "\n\nvec1:\n";
+    for(auto elem : vec1) cout << elem << ' ';
+    cout << "\n\nvec2:\n";
+    for(auto elem : vec2) cout << elem << ' ';
+    cout << "\n\nvec3:\n";
+    for(auto elem : vec3) cout << elem << ' ';
+    cout << "\n\nvec4:\n";
+    for(auto elem : vec4) cout << elem << ' ';
+    cout << "\n\nvec5:\n";
+    for(auto elem : vec5) cout << elem << ' ';
+    cout << "\n\nvec6:\n";
+    for(auto elem : vec6) cout << elem << ' ';
 }
