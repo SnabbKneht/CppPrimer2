@@ -7,6 +7,7 @@ using std::cout;
 using std::vector;
 using std::list;
 using std::deque;
+using std::string;
 
 bool find(vector<int>::iterator beg, vector<int>::iterator end, int value)
 {
@@ -89,4 +90,24 @@ int main()
     for(auto elem : vec8) cout << elem << ' ';
     cout << "\n\nvec9:\n";
     for(auto elem : vec9) cout << elem << ' ';
+
+    // Exercise 9.14
+
+    list<const char*> oldstyle = {"abc", "def", "ghi"};
+    vector<string> newstyle(5, "hello");
+    cout << '\n';
+    for(auto &elem : newstyle) cout << elem << '\n';
+
+    string &testref = newstyle.front();
+    cout << "Ref = " << testref << '\n';
+
+    newstyle.assign(oldstyle.begin(), oldstyle.end());
+    cout << '\n';
+    for(auto &elem : newstyle) cout << elem << '\n';
+    cout << "Ref = " << testref << '\n';
+
+    vector<string> newstyle2(6, "hi");
+    std::swap(newstyle, newstyle2);
+    cout << "After swap:\n";
+    cout << "Ref = " << testref << '\n';
 }
