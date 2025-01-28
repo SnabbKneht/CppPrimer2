@@ -10,3 +10,4 @@ add_executable(Ex8_6 Exercises/Chapter_8/sales_data.cpp Exercises/Chapter_8/sale
 add_executable(Ex8_10 Exercises/Chapter_8/Ex8_10.cpp)
 add_executable(Ex8_13 Exercises/Chapter_8/Ex8_13.cpp)
 add_executable(Ex9_2 Exercises/Chapter_9/Ex9_2.cpp)
+add_executable(Ex9_15 Exercises/Chapter_9/Ex9_15.cpp)
