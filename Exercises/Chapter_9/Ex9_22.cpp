@@ -35,4 +35,14 @@ int main()
     cout << *v.begin() << '\n'; // undefined if empty
     cout << v[0] << '\n';       // undefined if empty
     cout << v.at(0) << '\n'; // error if empty
+
+    // Exercise 9.25
+    cout << "\nExercise 9.25\n\n";
+
+    v.erase(v.begin(), v.begin()); // nothing happens
+    for(auto i : v)
+    {
+        cout << i << ' ';
+    }
+    cout << '\n';
 }
