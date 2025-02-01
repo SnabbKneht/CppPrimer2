@@ -23,3 +23,6 @@ add_executable(Ex9_34 Exercises/Chapter_9/Ex9_34.cpp)
 add_executable(Ex9_38 Exercises/Chapter_9/Ex9_38.cpp)
 add_executable(Ex9_40 Exercises/Chapter_9/Ex9_40.cpp)
 add_executable(Ex9_50 Exercises/Chapter_9/Ex9_50.cpp)
+add_executable(Ex9_51 Exercises/Chapter_9/Ex9_51.cpp
+        Exercises/Chapter_9/date.cpp
+        Exercises/Chapter_9/date.h)
