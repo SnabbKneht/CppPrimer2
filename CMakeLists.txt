@@ -26,3 +26,4 @@ add_executable(Ex9_50 Exercises/Chapter_9/Ex9_50.cpp)
 add_executable(Ex9_51 Exercises/Chapter_9/Ex9_51.cpp
         Exercises/Chapter_9/date.cpp
         Exercises/Chapter_9/date.h)
+add_executable(Ex9_52 Exercises/Chapter_9/Ex9_52.cpp)
