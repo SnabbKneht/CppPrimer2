@@ -12,6 +12,7 @@ using std::ranges::sort;
 using std::ranges::stable_sort;
 using std::unique;
 using std::ranges::stable_partition;
+using std::ranges::for_each;
 
 bool is_shorter(const string &a, const string &b)
 {
@@ -42,8 +43,7 @@ void biggies(vector<string> &words, vector<string>::size_type min_size)
     words.erase(iter, words.end());
     
     cout << "There are " << words.size() << " elements with size >= " << min_size << ":\n";
-    for(const auto &w : words)
-        cout << w << ' ';
+    for_each(words, [](const string &s) { cout << s << ' '; });
     cout << '\n';
 }
 
