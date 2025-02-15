@@ -14,6 +14,7 @@ class sales_data
 
         void add(const sales_data &data);
         const std::string &get_book_no() const { return book_no; }
+        double get_revenue() const { return revenue; }
         std::string to_string() const;
 
     private:
