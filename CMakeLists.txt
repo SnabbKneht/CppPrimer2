@@ -36,3 +36,4 @@ add_executable(Ex10_12 Exercises/Chapter_10/Ex10_12.cpp
         Exercises/Chapter_8/sales_data.cpp)
 add_executable(Ex10_13 Exercises/Chapter_10/Ex10_13.cpp)
 add_executable(Ex10_14 Exercises/Chapter_10/Ex10_14.cpp)
+add_executable(Ex10_16 Exercises/Chapter_10/Ex10_16.cpp)

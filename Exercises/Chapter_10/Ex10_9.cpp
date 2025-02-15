@@ -15,7 +15,7 @@ bool is_shorter(const string &s1, const string &s2)
     return s1.size() < s2.size();
 }
 
-void elim_dups(vector<string> &words)
+void sort_and_elim_dups(vector<string> &words)
 {
     // sort(words.begin(), words.end()); // old approach
     std::ranges::sort(words); // new C++20 approach
@@ -39,7 +39,7 @@ int main()
         sentence.push_back(word);
     }
 
-    elim_dups(sentence);
+    sort_and_elim_dups(sentence);
     std::ranges::sort(sentence, is_shorter);
 
     for(const auto &s : sentence)
