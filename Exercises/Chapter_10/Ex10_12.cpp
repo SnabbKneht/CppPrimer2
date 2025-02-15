@@ -30,7 +30,9 @@ int main()
     }
     in.close();
 
-    sort(all_data, compare_isbn);
+    // sort(all_data, compare_isbn); // using function
+    sort(all_data, [](const sales_data &a, const sales_data &b)
+        { return a.get_book_no() < b.get_book_no(); }); // using lambda (equivalent)
 
     for(const auto &entry : all_data)
         cout << entry.to_string() << '\n';
