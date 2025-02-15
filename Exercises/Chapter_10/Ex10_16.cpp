@@ -11,7 +11,7 @@ using std::string;
 using std::ranges::sort;
 using std::ranges::stable_sort;
 using std::unique;
-using std::ranges::find_if;
+using std::ranges::stable_partition;
 
 bool is_shorter(const string &a, const string &b)
 {
@@ -37,12 +37,10 @@ void biggies(vector<string> &words, vector<string>::size_type min_size)
     sort_and_elim_dups(words);
     sort_by_size(words);
 
-    // find first element of at least min_size and erase smaller elements
-    auto iter = find_if(words, [min_size](const string &s)
-        { return s.size() >= min_size; });
-    words.erase(words.begin(), iter);
-
-    // print count and elements
+    auto iter = stable_partition(words, [min_size](const string &s)
+        { return s.size() >= min_size; }).begin();
+    words.erase(iter, words.end());
+    
     cout << "There are " << words.size() << " elements with size >= " << min_size << ":\n";
     for(const auto &w : words)
         cout << w << ' ';
