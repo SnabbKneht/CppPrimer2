@@ -12,6 +12,7 @@ using std::istringstream;
 using std::vector;
 using std::string;
 using std::ranges::sort;
+using std::ranges::count_if;
 
 bool compare_isbn(const sales_data &sd1, const sales_data &sd2)
 {
@@ -36,4 +37,8 @@ int main()
 
     for(const auto &entry : all_data)
         cout << entry.to_string() << '\n';
+
+    auto cnt = count_if(all_data,
+        [](const sales_data &sd) { return sd.get_units_sold() >= 10; });
+    cout << "There are " << cnt << " data with units_sold >= 10\n";
 }
