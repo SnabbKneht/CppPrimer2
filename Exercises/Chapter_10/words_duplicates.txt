@@ -1,0 +1,10 @@
+Apple
+Banana
+Apple
+Orange
+Grape
+Banana
+Cherry
+Orange
+Grape
+Cherry
