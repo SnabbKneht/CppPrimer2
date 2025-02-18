@@ -11,6 +11,7 @@ using std::ranges::sort;
 using std::copy;
 using std::vector;
 using std::back_inserter;
+using std::ranges::unique_copy;
 
 int main()
 {
@@ -20,5 +21,5 @@ int main()
     copy(in, end, back_inserter(numbers));
     sort(numbers);
     ostream_iterator<int> out(cout, " ");
-    std::ranges::copy(numbers, out);
+    unique_copy(numbers, out);
 }
