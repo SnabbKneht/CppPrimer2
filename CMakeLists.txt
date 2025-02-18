@@ -47,3 +47,4 @@ add_executable(Ex10_30 Exercises/Chapter_10/Ex10_30.cpp)
 add_executable(Ex10_32 Exercises/Chapter_10/Sales_item.h
         Exercises/Chapter_10/Ex10_32.cpp
         Exercises/Chapter_10/Version_test.h)
+add_executable(Ex10_33 Exercises/Chapter_10/Ex10_33.cpp)
