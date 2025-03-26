@@ -50,3 +50,4 @@ add_executable(Ex10_32 Exercises/Chapter_10/Sales_item.h
 add_executable(Ex10_33 Exercises/Chapter_10/Ex10_33.cpp)
 add_executable(Ex10_34 Exercises/Chapter_10/Ex10_34.cpp)
 add_executable(Ex10_36 Exercises/Chapter_10/Ex10_36.cpp)
+add_executable(Ex10_37 Exercises/Chapter_10/Ex10_37.cpp)
