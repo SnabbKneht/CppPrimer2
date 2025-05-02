@@ -56,3 +56,6 @@ add_executable(Ex11_3 Exercises/Chapter_11/Ex11_3.cpp)
 add_executable(Ex11_4 Exercises/Chapter_11/string_utils.h
         Exercises/Chapter_11/Ex11_4.cpp
         Exercises/Chapter_11/string_utils.cpp)
+add_executable(Ex11_7 Exercises/Chapter_11/Ex11_7.cpp
+        Exercises/Chapter_11/families_container.cpp
+        Exercises/Chapter_11/families_container.h)
