@@ -1,28 +1,33 @@
 #include "string_utils.h"
 #include <algorithm>
 
+using std::string;
 using std::ranges::for_each;
 
-void string_utils::to_lower(std::string &s)
+string string_utils::to_lower(const std::string &s)
 {
-    for_each(s, [](char &c)
+    string copy(s);
+    for_each(copy, [](char &c)
     {
         c = tolower(c);
     });
+    return copy;
 }
 
-void string_utils::clear_punctuation_marks(std::string &s)
+string string_utils::clear_punctuation_marks(const std::string &s)
 {
-    auto iter = s.begin();
-    while(iter != s.end())
+    string copy = s;
+    auto iter = copy.begin();
+    while(iter != copy.end())
     {
         if(punctuation_marks.contains(*iter))
         {
-            iter = s.erase(iter);
+            iter = copy.erase(iter);
         }
         else
         {
             ++iter;
         }
     }
+    return copy;
 }
