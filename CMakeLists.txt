@@ -53,3 +53,6 @@ add_executable(Ex10_36 Exercises/Chapter_10/Ex10_36.cpp)
 add_executable(Ex10_37 Exercises/Chapter_10/Ex10_37.cpp)
 add_executable(Ex10_42 Exercises/Chapter_10/Ex10_42.cpp)
 add_executable(Ex11_3 Exercises/Chapter_11/Ex11_3.cpp)
+add_executable(Ex11_4 Exercises/Chapter_11/string_utils.h
+        Exercises/Chapter_11/Ex11_4.cpp
+        Exercises/Chapter_11/string_utils.cpp)
