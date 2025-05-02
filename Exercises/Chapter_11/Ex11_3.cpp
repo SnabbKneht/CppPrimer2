@@ -3,6 +3,7 @@
 #include <string>
 #include <fstream>
 #include <algorithm>
+#include <iterator>
 
 using std::cout;
 using std::map;
