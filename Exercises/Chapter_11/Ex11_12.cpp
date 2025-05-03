@@ -19,7 +19,13 @@ int main()
     int i;
     while(cin >> s >> i)
     {
+        // The best way
         pairs.emplace_back(s, i);
+
+        // Other approaches
+        //pairs.push_back({s, i});
+        //pairs.push_back(pair<string, int>(s, i));
+        //pairs.push_back(std::make_pair(s, i));
     }
 
     // Using lambda
