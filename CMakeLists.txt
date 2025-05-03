@@ -60,3 +60,6 @@ add_executable(Ex11_7 Exercises/Chapter_11/Ex11_7.cpp
         Exercises/Chapter_11/families_container.cpp
         Exercises/Chapter_11/families_container.h)
 add_executable(Ex11_9 Exercises/Chapter_11/Ex11_9.cpp)
+add_executable(Ex11_11 Exercises/Chapter_11/chemical_element.cpp Exercises/Chapter_11/chemical_element.h
+        Exercises/Chapter_11/state_of_matter.h
+        Exercises/Chapter_11/Ex11_11.cpp)
