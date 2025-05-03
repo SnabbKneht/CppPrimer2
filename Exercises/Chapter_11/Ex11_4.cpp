@@ -40,12 +40,6 @@ int main()
         cout << pair.first << " - " << pair.second << '\n';
     });
 
-    // newer approach using structured bindings (could not get this to work, compiler probably did not support it yet)
-    // std::ranges::for_each(word_counter, [](const auto &[key, value])
-    // {
-    //     cout << key << " - " << value << '\n';
-    // });
-
     in.close();
     return 0;
 }
