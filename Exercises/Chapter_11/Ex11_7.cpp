@@ -12,13 +12,28 @@ using std::vector;
 int main()
 {
     families_container families;
-    families.add_family("Stark", {"Sansa", "Arya"});
-    families.add_family("Lannister", {"Tyrion", "Jaime"});
-    families.add_family("Lannister", {"Cersei"});
-    families.add_family("Stark", {"Robb", "Rickon"});
-    families.add_family("Targaryen", {"Daenerys", "Viserys", "Rhaegar"});
+    families.add_family("Stark", {
+        {"Sansa", 1},
+        {"Arya", 2}
+    });
+    families.add_family("Lannister", {
+        {"Tyrion", 3},
+        {"Jaime", 4}
+    });
+    families.add_family("Lannister", {
+        {"Cersei", 5}
+    });
+    families.add_family("Stark", {
+        {"Robb", 6},
+        {"Rickon", 7}
+    });
+    families.add_family("Targaryen", {
+        {"Daenerys", 8},
+        {"Viserys", 9},
+        {"Rhaegar", 10}
+    });
 
-    // Older approach
+    // Older approach (for version without pairs)
     // for(const auto &pair : families.get_families())
     // {
     //     cout << pair.first << '\n';
@@ -32,9 +47,9 @@ int main()
     for(const auto &[house, children] : families.get_families())
     {
         cout << house << '\n';
-        for(const string &child : children)
+        for(const auto &pair : children)
         {
-            cout << '\t' << child << '\n';
+            cout << '\t' << pair.first << ' ' << pair.second << '\n';
         }
     }
 }
