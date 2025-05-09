@@ -64,3 +64,4 @@ add_executable(Ex11_11 Exercises/Chapter_11/chemical_element.cpp Exercises/Chapt
         Exercises/Chapter_11/state_of_matter.h
         Exercises/Chapter_11/Ex11_11.cpp)
 add_executable(Ex11_12 Exercises/Chapter_11/Ex11_12.cpp)
+add_executable(Ex11_16 Exercises/Chapter_11/Ex11_16.cpp)
