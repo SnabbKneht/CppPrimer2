@@ -66,3 +66,4 @@ add_executable(Ex11_11 Exercises/Chapter_11/chemical_element.cpp Exercises/Chapt
 add_executable(Ex11_12 Exercises/Chapter_11/Ex11_12.cpp)
 add_executable(Ex11_16 Exercises/Chapter_11/Ex11_16.cpp)
 add_executable(Ex11_17 Exercises/Chapter_11/Ex11_17.cpp)
+add_executable(Ex11_18 Exercises/Chapter_11/Ex11_18.cpp)
