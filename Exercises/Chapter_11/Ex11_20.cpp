@@ -24,11 +24,14 @@ int main()
 
     for_each(beg, end, [&word_count](const string &word)
     {
-        auto [iter, is_new_word] = word_count.insert({word, 1});
-        if(!is_new_word)
-        {
-            ++iter->second;
-        }
+        ++word_count.insert({word, 0}).first->second;
+
+        // The same but longer
+        // auto [iter, is_new_word] = word_count.insert({word, 1});
+        // if(!is_new_word)
+        // {
+        //     ++iter->second;
+        // }
     });
 
     for(const auto &[word, count] : word_count)
